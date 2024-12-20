@@ -12,19 +12,19 @@ variable "account-request-table-hash" {
 
 variable "control_tower_parameters" {
   type = object({
-    AccountEmail              = "cae+lab01-audit@amazon.com"
-    AccountName               = "Audit"
-    ManagedOrganizationalUnit = "Security"
-    SSOUserEmail              = "cae+lab01-audit@amazon.com"
-    SSOUserFirstName          = "Audit"
-    SSOUserLastName           = "Security"
+    AccountEmail              = string
+    AccountName               = string
+    ManagedOrganizationalUnit = string
+    SSOUserEmail              = string
+    SSOUserFirstName          = string
+    SSOUserLastName           = string
   })
 }
 
 variable "change_management_parameters" {
   type = object({
-    change_requested_by = "Admin Audit"
-    change_reason       = "Asociate Audit With AFT"
+    change_requested_by = string
+    change_reason       = string
   })
 }
 
@@ -41,6 +41,6 @@ variable "custom_fields" {
 
 variable "account_customizations_name" {
   type        = string
-  default     = "Audit"
+  default     = ""
   description = "The name of the account customizations to apply"
 }
