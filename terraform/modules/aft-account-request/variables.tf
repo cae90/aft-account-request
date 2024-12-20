@@ -33,11 +33,11 @@ variable "account_tags" {
   description = "map of account-level tags"
 }
 
-#variable "custom_fields" {
-#  type        = map(any)
-#  description = "map of custom fields defined by the customer"
-#  default     = {}
-#}
+variable "custom_fields" {
+  type        = map(any)
+  description = "map of custom fields defined by the customer"
+  default     = {}
+}
 
 variable "account_customizations_name" {
   type        = string
