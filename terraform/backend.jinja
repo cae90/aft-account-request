@@ -3,7 +3,7 @@
 
 {% if tf_distribution_type == "oss" -%}
 terraform {
-  required_version = ">= 0.15.0"
+  required_version = ">= {{ tf_version }}"
   backend "s3" {
     region         = "{{ region }}"
     bucket         = "{{ bucket }}"
@@ -11,7 +11,7 @@ terraform {
     dynamodb_table = "{{ dynamodb_table }}"
     encrypt        = "true"
     kms_key_id     = "{{ kms_key_id }}"
-#    role_arn = "{{ aft_admin_role_arn }}"
+#   role_arn = "{{ aft_admin_role_arn }}"
   }
 }
 {% else -%}
