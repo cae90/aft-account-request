@@ -49,7 +49,7 @@ module "account_request_02" {
     "ABC:Owner"       = "cae@amazon.com.com"
     "ABC:Division"    = "ENT"
     "ABC:Environment" = "Dev"
-    "ABC:CostCenter"  = "123456"
+    "ABC:CostCenter"  = "1234567"
     "ABC:Vended"      = "true"
     "ABC:DivCode"     = "102"
     "ABC:BUCode"      = "ABC003"
