@@ -68,7 +68,7 @@ module "account_request_02" {
 
   account_customizations_name = "Management"
 }
-module "account_request_01" {
+module "account_request_03" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
